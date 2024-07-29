@@ -10,7 +10,7 @@ dokku_log_info2 "Monorepo detected"
 
 while IFS="=" read -u 10 -a line || [[ -n $line ]]; do
   [[ "${line[0]}" == "#"* || "${line[1]}" == "" ]] && continue
-  [[ $APP != *"${line[0]}"* ]] && continue
+  [[ $APP != "${line[0]}"* ]] && continue
 
   app_subdir="${line[1]}"
   dokku_log_info2 "Installing from ./$app_subdir"
