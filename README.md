@@ -1,11 +1,6 @@
-> ## Shameless plug
->
-> Looking for something more robust? I'm currently working on Lunni, a
-> Docker PaaS which helps you deploy and manage apps on your own server. Paste
-> your docker-compose.yml file into the dashboard or link your Git repository,
-> make a couple tweaks and hit Deploy. [Learn more →](https://lunni.dev/?ref=dokku-monorepo)
->
-> [![Lunni screenshot](https://lunni.dev/images/screenshot-hero.png)](https://lunni.dev/?ref=dokku-monorepo)
+# Dokku monorepo - fork
+
+This is a fork from https://gitlab.com/notpushkin/dokku-monorepo. The main difference is the code that finds the matching app, as we do not use wildcards.
 
 dokku-monorepo
 ===============
@@ -15,7 +10,7 @@ Dokku plugin for monorepo setups.
 ## Install
 
 ```
-dokku plugin:install https://gitlab.com/notpushkin/dokku-monorepo
+dokku plugin:install https://github.com/jar-work/dokku-monorepo
 ```
 
 ## Usage
